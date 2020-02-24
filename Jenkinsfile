@@ -10,7 +10,7 @@ node {
         }
     stage ('Build Docker'){
         sh 'docker build -t yararo/express-server .'
-        sh 'docker run -p 49160:8080 -d yararo/express-server'
+        sh 'docker run -p 49160:3000 -d yararo/express-server'
     }
     }
     catch (err) {
