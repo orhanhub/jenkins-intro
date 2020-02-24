@@ -1,4 +1,4 @@
-install Jenkins on ubuntu
+# Install Jenkins on Ubuntu
 
 wget -q -O - http://pkg.jenkins-ci.org/debian-stable/jenkins-ci.org.key |
 apt-key add -
@@ -13,3 +13,5 @@ apt-get -y install openjdk-8-jdk
 apt-get -y install jenkins
 
 cat /var/lib/jenkins/secrets/initialAdminPassword
+
+# Docker permission issues
